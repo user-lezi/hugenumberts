@@ -76,7 +76,7 @@ var HugeNumber = (function () {
         // Normalize properties
         normalize() {
             if(this.array.length > HugeNumber.MAX_ARRAY_LENGTH) {
-                throw new Error("exceed max array length");
+                throw new Error("exceeded max array length");
             }
 
             // Handle small second arguments
