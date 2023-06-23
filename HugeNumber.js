@@ -75,6 +75,10 @@ var HugeNumber = (function () {
 
         // Normalize properties
         normalize() {
+            if(this.array.length > HugeNumber.MAX_ARRAY_LENGTH) {
+                throw new Error("exceed max array length");
+            }
+
             // Handle small second arguments
             // e.g. 10 -> 2 -> 2 can be simplified to 10 -> 10
             // Currently have yet to implement this for arrays with length of 3+ 
@@ -575,6 +579,9 @@ var HugeNumber = (function () {
     HugeNumber.E = new HugeNumber(Math.E);
     HugeNumber.PI = new HugeNumber(Math.PI);
     HugeNumber.TEN = new HugeNumber(10);
+
+    // Max chain length (to preevnt memory leak)
+    HugeNumber.MAX_ARRAY_LENGTH = 1000;
 
     return HugeNumber;
 })();
