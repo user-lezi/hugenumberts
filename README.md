@@ -1,4 +1,4 @@
-# hugenumber
+# hugenumberjs
 A library for storing extremely large numbers (up to {10, 1000, 1, 1, 2}) in JavaScript. Supports both Node and browser.
 
 Internally, number is represented as a sign (1 if positive, -1 if negative) and array. The value represented is `sign` * 10 → `array[0]` → `array[1]` → `array[2]` → `array[2]`... in [chained arrow notation](https://googology.fandom.com/wiki/Chained_arrow_notation)

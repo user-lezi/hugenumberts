@@ -1,0 +1,30 @@
+{
+  "name": "hugenumberjs",
+  "version": "1.0.0",
+  "description": "A library for storing extremely large numbers (up to {10, 1000, 1, 1, 2}) in JavaScript.",
+  "main": "HugeNumber.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nirvanasupermind/hugenumber.git"
+  },
+  "keywords": [
+    "huge",
+    "number",
+    "hugenumber",
+    "bignumber",
+    "bigint",
+    "googology"
+  ],
+  "author": "CompactStar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nirvanasupermind/hugenumber/issues"
+  },
+  "homepage": "https://github.com/nirvanasupermind/hugenumber#readme"
+}
