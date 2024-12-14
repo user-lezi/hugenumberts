@@ -1,17 +1,16 @@
 {
-  "name": "hugenumberjs",
-  "version": "1.0.1",
-  "description": "A library for storing extremely large numbers (up to {10, 1000, 1, 1, 2}) in JavaScript.",
-  "main": "HugeNumber.js",
-  "directories": {
-    "test": "test"
-  },
+  "name": "hugenumberts",
+  "version": "1.0.0",
+  "description": "A library for storing extremely large numbers (up to {10, 1000, 1, 1, 2}) in Typescript.",
+  "main": "dist/HugeNumber.js",
+  "types": "dist/HugeNumber.d.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "prettier src -w && tsc",
+    "test": "npm run build && node dist/test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nirvanasupermind/hugenumber.git"
+    "url": "git+https://github.com/user-lezi/hugenumberts.git"
   },
   "keywords": [
     "huge",
@@ -19,12 +18,20 @@
     "hugenumber",
     "bignumber",
     "bigint",
-    "googology"
+    "googology",
+    "typescript"
   ],
-  "author": "CompactStar",
+  "author": "Lezii",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nirvanasupermind/hugenumber/issues"
+    "url": "https://github.com/user-lezi/hugenumberts/issues"
   },
-  "homepage": "https://github.com/nirvanasupermind/hugenumber#readme"
+  "homepage": "https://github.com/user-lezi/hugenumberts#readme",
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/uglify-js": "^3.17.5",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2",
+    "uglify-js": "^3.19.3"
+  }
 }
